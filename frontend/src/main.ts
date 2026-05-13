@@ -3,9 +3,20 @@ async function updateMetrics() {
   const metrics = await response.json();
 
   const cpuElement = document.querySelector("#cpu-value");
+  const memoryElement = document.querySelector("#memory-value");
+  const loadElement = document.querySelector("#load-value");
 
   if (cpuElement) {
     cpuElement.textContent = `${metrics.cpu.usagePercent}%`;
+  }
+
+  if (memoryElement) {
+    memoryElement.textContent = `${metrics.memory.usedPercent}%`;
+  }
+
+  if (loadElement) {
+    loadElement.textContent =
+      `${metrics.loadAverage.one} ${metrics.loadAverage.five} ${metrics.loadAverage.fifteen}`;
   }
 }
 

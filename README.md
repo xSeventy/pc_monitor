@@ -48,4 +48,5 @@ pc-monitor/
 │       └── style.css
 │
 ├── README.md
-└── .gitignore
+├── .gitignore
+└── pc-monitor.zip

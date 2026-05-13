@@ -1,0 +1,21 @@
+# C++ build files
+backend/build/
+build/
+cmake-build-*/
+
+# Frontend dependencies
+frontend/node_modules/
+node_modules/
+
+# Frontend build output
+frontend/dist/
+dist/
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
